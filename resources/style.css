@@ -3,10 +3,20 @@
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: .9;
+  opacity: 0.9;
   text-align: center;
   margin: 0px;
 }
+
+h1, h2, h3{
+  padding: 10px;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
 
 div{
   display: block;
@@ -79,7 +89,46 @@ nav a{
   padding-top:10px;
 }
 
-#locations{
+#location-container{
   height: 500px;
-  background-image: url(./images/img-mission-background.jpg);
+  padding: 75px 0px;
+  background-image: url(./images/img-locations-background.jpg);
+}
+
+#location-container h2, #location-container #location-blocks{
+    background-color: transparent;
+}
+
+#location-blocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 0px;
+  opacity: 1;
+}
+
+.location-block{
+  width: 300px;
+  margin: 0px 40px;
+}
+
+.location-block p{
+  margin: 25px 0px;
+}
+
+.location-block h3{
+  margin:25px 0px;
+}
+
+#address{
+  height:200px;
+}
+
+#address h5{
+  margin: 35px 0px;
+}
+
+footer h5{
+  text-align: left;
+  padding-left:20px;
 }
